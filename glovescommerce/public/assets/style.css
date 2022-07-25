@@ -4,15 +4,17 @@
   box-sizing: border-box;
 
 }
+
 body {
-  background-color: rgb(253, 204, 71);
+  background-color: white;
+  margin:0;
+  padding:0;
 }
 
 .sticky {
   position: fixed;
-  top: 0;
   width: 100%;
- 
+  height: 8%;
 }
 
 a {
@@ -21,130 +23,98 @@ a {
 }
 
 nav {
-  text-align: center;
-  background-color: rgb(253, 204, 71);
-  padding: 1rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
 }
 
 nav li {
   display: inline-block;
-
+  list-style-type: none;
 }
-
-.hero {
-  padding: 2rem 0;
-}
-
-.hero__title {
+.navbutton {
+  width: 180px;
+  font-size: 20px;
+  padding: 10px 20px; 
   text-align: center;
 }
 
-.navbutton {
-  width: 180px;
-  background-color: white;
-  font-size: 22px;
-  padding: 10px 20px;
-  border-radius: 40px;
+.button {
+  display: inline-block;
+  border: 2px solid #1b1b1b;
+  text-align: center;
+  background-color: rgb(253, 204, 71) ;
+  padding: 0.8rem 3.65rem;
+  font-size: 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.hero {
+  padding: 20rem 2rem;
+  background-image: url(/assets/images/glove100.png);
+  background-size: cover;
 }
 
-/* .navegacion{
-  background-color: white;
+/* .hero-content {
+  max-width: 1440px;
+  margin: 0 auto;
 } */
-.container {
-  margin: 2rem auto 0 auto;
-  width: 500px;
-  height: 60px
+
+.hero__title {
+  color: white;
+  margin-bottom: 2.2rem;
+  line-height: 1.2;
+  font-size: clamp(2.25rem, calc(1.71rem + 2.68vw), 3.63rem);
+  font-weight: 600;
+}
+.hero__subtitle {
+  color: #ffffff;
+  margin-bottom: 2.2rem;
+  text-align: left;
+  font-size: clamp(1rem, calc(0.9rem + 0.49vw), 1.25rem);
+  font-weight: 500;
 }
 
-.form {
-  display: flex;
-  flex-direction: row;
+@media (max-width: 640px) {
+  .hero {
+    padding: 14rem 2rem 10rem 2rem;
+  }
 }
-.form-box{
+.form-box {
   margin: 50px;
   align-items: center;
 }
-.label_name{
+
+.label_name {
   margin-left: 10px;
-}
-.search-field {
-  width: 100%;
-  padding: 10px 35px 10px 15px;
-  border-radius: 100px;
-  background-color: white;
-}
-
-.search-button {
-  background: transparent;
-  border: none;
-  outline: none;
-  margin-left: -33px;
-}
-
-.search-button img {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-}
-
-.asidebutton {
-  max-width: 280px;
-  background-color: white;
-  font-size: 22px;
-  padding: 10px 20px;
-  border-radius: 40px;
-  display: inline-block;
-  margin: 100px;
 }
 
 #logo {
   margin-bottom: 10px;
+  float: left;
 }
-
-h2 {
-  color: black;
-  text-align: center;
-}
-
-h3 {
-  font-size: 15px;
-  font-weight: 400;
-}
-
-body {
-  background-color: rgb(253, 204, 71);
-
-}
-
-p {
-  color: black;
-  /* padding: 50px; */
-  font-size: 32px;
-  text-align: center;
-}
-
-
-header {
-  width: 100%;
-}
-
-
 footer {
   text-align: center;
   width: 100%;
   bottom: 0;
   color: black;
+  font-style: italic;
+ font-size: 12px;
 
 }
 
 p {
-  font-size: 18px;
+  color: black;
+  text-align: center;
 }
 
 form {
   text-align: center;
   margin: 10rem auto 0 auto;
- 
+
 }
 
 form input {
@@ -153,11 +123,10 @@ form input {
   border-top: none;
   outline: none;
   background-color: transparent;
-  border-color: whitesmoke;
+  border-color: rgb(253, 204, 71);
   gap: 1rem;
 
 }
-
 textarea {
   resize: none;
   outline: none;
@@ -165,54 +134,85 @@ textarea {
   border-right: none;
   border-top: none;
   background-color: transparent;
-  border-color: whitesmoke;
+  border-color: rgb(253, 204, 71);
 }
-
-
 .submit {
-  background-color: azure;
+  background-color: rgb(253, 204, 71);
   border-radius: 40px;
   padding: 10px 35px 10px 15px;
 }
-
 .fa {
   padding: 20px;
-  font-size: 32px;
+  font-size: 40px;
   width: 70px;
   text-decoration: none;
 }
-aside {
-  font-family: cursive;
-  font-size: 32px;
-  background-size: cover;
-  display: inline-block;
+#FB{
+  color: blue;
+}
+#Twitter{
+  color:rgb(22, 216, 216)
+}
+#IG{
+  color:rgb(248, 35, 70)
+}
+#Pinterest{
+  color: red;
 }
 .products {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  margin-top: 15rem;
   justify-content: space-around;
 }
+
 .product {
   background-color: white;
   width: 31%;
   margin: 2rem 0;
+  
 }
-.descripcion_del_producto{
+
+.descripcion_del_producto {
   font-size: 14px;
   padding: 0 1rem;
 }
-/* .product__image{
-  height: 250px;
-} */
-.product__image img{
-  width: 100% ;
+
+.product__image img {
+  width: 100%;
   object-fit: cover;
 }
-.product__button{
+
+.product__button {
   background-color: rgb(253, 204, 71);
   padding: 8px 14px;
   display: inline-block;
   border-radius: 80px;
+  
+}
+.botones{
+  border-radius: 100px;
+  padding: 5px ;
+  font-size: 10px;
+  background-color: rgb(253, 204, 71);
+}
+.los-cuatro-botones{
+padding-top: 5rem;  
+}
+.Carousel-caption h4{
+  font-size: 20px;
+  font-style: italic;
+  color:black;  
+  }
+.Carousel-caption {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  background-color: rgb(253, 204, 71);
+   margin-left: 400px;
+   height: 200px;
+   width: 500px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
 }

@@ -287,6 +287,9 @@ textarea {
   filter: invert(100%);
 }
 @media(max-width:800px){
+  .d-block{
+    
+  }
   .Carousel-caption{
     
   }

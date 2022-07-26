@@ -9,10 +9,10 @@ app.use(express.json());
 const mysql = require('mysql');
 
 const db = mysql.createConnection({
-  user: process.env.NODE_USER,
-  host:process.env.NODE_HOST ,
-  password: process.env.NODE_PASSWORD,
-  database: process.env.NODE_DATABASE
+  user: process.env.NODE_USER || "admin",
+  host:process.env.NODE_HOST || "ecoglov.cdzjpf18ewih.us-east-1.rds.amazonaws.com",
+  password: process.env.NODE_PASSWORD || "LiveandLaugh99",
+  database: process.env.NODE_DATABASE || "reactCommerce"
 })
 db.connect(function (err) {
   if (err) {

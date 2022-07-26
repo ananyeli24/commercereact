@@ -10,7 +10,7 @@ export default function RouterPage() {
         <BrowserRouter>
         <Routes>
             
-              <Route path="/" index element={<Home/>} />
+              <Route path="/"  element={<Home/>} />
               <Route path="contact" element={<Contact/>} />
               <Route path="products" element={<Products/>} />
             

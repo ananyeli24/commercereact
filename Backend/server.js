@@ -8,8 +8,8 @@ app.use(express.json());
 const mysql = require('mysql');
 
 const db = mysql.createConnection({
-  user: 'root',
-  host: 'localhost',
+  user: 'admin',
+  host: 'ecoglov.cdzjpf18ewih.us-east-1.rds.amazonaws.com',
   password: 'LiveandLaugh99',
   database: 'reactCommerce'
 })
@@ -67,4 +67,3 @@ app.get("/products/color", (req, res) => {
 app.listen(5000, () => {
   console.log('Port 5000')
 })
-

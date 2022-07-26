@@ -15,9 +15,7 @@ export default function Home() {
             Elite Gloves
           </h1>
 
-          <p className='hero__subtitle'>
-            Level Up Your Game With Our Gloves!
-          </p>
+          <p className='hero__subtitle'> Level Up Your Game With Our Gloves!</p>
 
           <div className='header-button-wrapper'>
             <Link to="/products" className='button' >Shop Now </Link>

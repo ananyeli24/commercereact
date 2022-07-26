@@ -2,14 +2,14 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Slider() {
   return (
-    <Carousel fade className="Carousel-wrapper">
+    <Carousel fade className="Carousel-wrapper container">
       <Carousel.Item active>
       
         <img
           className="d-block"
           
           src="assets/images/Glove5.jpeg"
-          // alt="First slide"
+          alt="First slide"
         />
         <Carousel.Caption className= "Carousel-caption">
           <h4>Gold Bond  Mizuno</h4>
@@ -23,9 +23,8 @@ function Slider() {
       <Carousel.Item active >
         <img
           className="d-block"
-
           src="assets/images/Glove6.jpeg"
-          // alt="Second slide"
+          alt="Second slide"
         />
 
         <Carousel.Caption className= "Carousel-caption" >
@@ -43,7 +42,7 @@ function Slider() {
           
           src="assets/images/Glove11.jpeg"
           
-          // alt="Third slide"
+          alt="Third slide"
         />
 
         <Carousel.Caption className= "Carousel-caption">

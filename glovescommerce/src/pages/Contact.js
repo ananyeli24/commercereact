@@ -31,34 +31,34 @@ export const  Contact = () => {
       <h3> Contact us!</h3>
       
       <div className="whole-form"> 
-      <div class="form-box">
+      <div className="form-box">
         <label>Name*</label>
-        <input type="text" className="label_name"placeholder="Julia Rodriguez" required/>
+        <input type="text" className="label_name"placeholder="Julia Rodriguez" />
       </div>
       
-      <div class="form-box">
+      <div className="form-box">
         <label >Number*</label>
-        <input type="text" className="label_name" placeholder="888-888-8888" required />
+        <input type="text" className="label_name" placeholder="888-888-8888" />
       </div>
 
       
-      <div class="form-box">
+      <div className="form-box">
 
         <label for="mail">Email*</label>
-        <input type="email" className="label_name" id="mail" placeholder="jualia@hello.com"/>
+        <input type="email" className="label_name" id="mail" placeholder="jualia@hello.com" required/>
 
       </div>
 
       
 
-      <div class="form-box">
+      <div className="form-box">
         <label for="Message"> Tells us anything! :) </label>
         <textarea id="Message" className="label_name" name="message"> </textarea>
       </div>
 
       </div>
       
-       <input class="submit" type="Submit" name="new-submission" id="new-submission" value="Submit"/>
+       <input className="submit" type="Submit" name="new-submission" id="new-submission" value="Submit"/>
     </form>
   
   

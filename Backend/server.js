@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const dotenv = require('dotenv').config();
 
 app.use(cors());
 app.use(express.json());
@@ -8,10 +9,10 @@ app.use(express.json());
 const mysql = require('mysql');
 
 const db = mysql.createConnection({
-  user: 'admin',
-  host: 'ecoglov.cdzjpf18ewih.us-east-1.rds.amazonaws.com',
-  password: 'LiveandLaugh99',
-  database: 'reactCommerce'
+  user: process.env.NODE_USER,
+  host:process.env.NODE_HOST ,
+  password: process.env.NODE_PASSWORD,
+  database: process.env.NODE_DATABASE
 })
 db.connect(function (err) {
   if (err) {

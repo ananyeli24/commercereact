@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function Slider() {
   return (
     <Carousel fade className="Carousel-wrapper container">
-      <Carousel.Item active>
+      <Carousel.Item>
       
         <img
           className="d-block"
@@ -20,7 +20,7 @@ function Slider() {
           </p>
         </Carousel.Caption>
       </Carousel.Item >
-      <Carousel.Item active >
+      <Carousel.Item>
         <img
           className="d-block"
           src="assets/images/Glove6.jpeg"
@@ -35,7 +35,7 @@ function Slider() {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item active>
+      <Carousel.Item>
       
         <img
           className="d-block"

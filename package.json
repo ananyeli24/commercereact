@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix glovescommerce && npm run build --prefix glovescommerce"
+    "start": "server.js"
   },
   "repository": {
     "type": "git",

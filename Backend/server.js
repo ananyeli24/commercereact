@@ -9,10 +9,10 @@ app.use(express.json());
 const mysql = require('mysql');
 
 const db = mysql.createConnection({
-  user: process.env.NODE_USER || "admin",
-  host:process.env.NODE_HOST || "ecoglov.cdzjpf18ewih.us-east-1.rds.amazonaws.com",
-  password: process.env.NODE_PASSWORD || "LiveandLaugh99",
-  database: process.env.NODE_DATABASE || "reactCommerce"
+  user: process.env.NODE_USER ,
+  host:process.env.NODE_HOST ,
+  password: process.env.NODE_PASSWORD ,
+  database: process.env.NODE_DATABASE 
 })
 db.connect(function (err) {
   if (err) {
@@ -66,19 +66,19 @@ app.get("/products/color", (req, res) => {
   console.log('Hello world')
 })
 //deployment
-const dirname = path.resolve();
+// const dirname = path.resolve();
 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(dirname, '/glovescommerce/build')))
+// if (process.env.NODE_ENV === "production") {
+//     app.use(express.static(path.join(dirname, '/glovescommerce/build')))
 
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "glovescommerce", "build", "index.html"))
-    })
-} else {
-    app.get("/", (req,res) => {
-        res.send("API is running....")
-    })
-};
+//     app.get("*", (req, res) => {
+//         res.sendFile(path.resolve(__dirname, "glovescommerce", "build", "index.html"))
+//     })
+// } else {
+//     app.get("/", (req,res) => {
+//         res.send("API is running....")
+//     })
+// };
 
 app.listen(process.env.PORT || 5000, () => {
   console.log('Port 5000')

@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Slider() {
   return (
-    <Carousel fade className="Carousel-wrapper container">
+    <Carousel fade className="carousel-wrapper-container">
       <Carousel.Item>
       
         <img

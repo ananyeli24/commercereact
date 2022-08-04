@@ -11,7 +11,7 @@ export const Products = () => {
 
   const [products, setProducts] = useState([])
 
-  let fetchUrl = 'http://localhost:5000/products'
+  let fetchUrl = 'https://elitegloves.herokuapp.com/products'
 
   const showProducts = async (url) => {
     try {
@@ -39,22 +39,22 @@ export const Products = () => {
   }, [])
 
   function lowToHight() {
-    fetchUrl = 'http://localhost:5000/products/prices/asc'
+    fetchUrl = 'https://elitegloves.herokuapp.com/products/prices/asc'
     return showProducts(fetchUrl)
 
   }
   function recommended() {
-    fetchUrl = 'http://localhost:5000/products'
+    fetchUrl = 'https://elitegloves.herokuapp.com/products'
     return showProducts(fetchUrl)
   }
 
   function highToLow() {
-    fetchUrl = 'http://localhost:5000/products/prices/desc'
+    fetchUrl = 'https://elitegloves.herokuapp.com/products/prices/desc'
     return showProducts(fetchUrl)
 
   }
   function color() {
-    fetchUrl = 'http://localhost:5000/products/color'
+    fetchUrl = 'https://elitegloves.herokuapp.com/products/color'
     return showProducts(fetchUrl)
   }
   return (
@@ -63,10 +63,10 @@ export const Products = () => {
       <NavBar />
      
       <section className="los-cuatro-botones">
-        <button className="botones" onClick={lowToHight}> Low To Hight </button>
-        <button className="botones" onClick={highToLow}>  Hight To Low </button>
-        <button className="botones" onClick={recommended}>  Recommended </button>
-        <button className="botones" onClick={color}> By Color </button>
+        <button className="botones" onClick={lowToHight}>Low To Hight</button>
+        <button className="botones" onClick={highToLow}> Hight To Low</button>
+        <button className="botones" onClick={recommended}>Recommended</button>
+        <button className="botones" onClick={color}>By Color</button>
       </section>
       <section className="products">
         {

@@ -20,9 +20,11 @@ console.log('inside toggle', toggleVisibility)
         </div>
 
         <ul className= {toggleVisibility ? 'navbar-links navbar-display-none' : 'navbar-links'}>
-          <li className="navbutton"><Link to="/">Home</Link></li>
-          <li className="navbutton"><Link to="/products">Gloves</Link></li>
-          <li className="navbutton"><Link to="/contact">Contact</Link></li>
+          <li className="navbutton"><Link to="/"> <span className="nav_button_hover">Home</span></Link></li>
+          <li className="navbutton"><Link to="/products"><span className="nav_button_hover">Gloves</span></Link></li>
+          <li className="navbutton"><Link to="/contact"><span className="nav_button_hover">Contact</span></Link></li>
+          <li className="navbutton"><Link to="/cart"><i className="fa-solid fa-cart-shopping nav_button_hover" > </i></Link></li>
+          
         </ul>
 
       </nav>
